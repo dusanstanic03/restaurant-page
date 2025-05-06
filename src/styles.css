@@ -1,0 +1,146 @@
+@font-face {
+    font-family: greek;
+    src: url(./fonts/Greek-Freak.ttf);
+}
+
+@font-face {
+    font-family: montserrat;
+    src: url(./fonts/Montserrat-Regular.ttf);
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('./images/greece.jpg');
+    /* background-size: 100%; */
+    background-repeat: no-repeat;  /* Prevent repeating */
+    background-size: cover;         /* Fill the entire area */
+    background-position: center;    /* Center the image */
+    background-repeat: no-repeat;   /* Don't repeat the image */
+    background-attachment: fixed;   /* Optional: makes it stay fixed during scroll */
+    /* height: 100vh; */
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(248, 245, 242, 0.8);
+    margin-bottom: 20px;
+
+    position: relative;
+    overflow: hidden;
+    
+}
+
+#content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#logo{
+    width: 300px;
+}
+nav{
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    /* z-index: 2; */
+    position: relative;
+    
+}
+ /* color: #2c3d45; */
+ .nav-btn {
+    /* font-family: greek; */
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    background-color: rgba(248, 245, 242, 0);
+    color: #0c6186;
+    border: none;
+    cursor: pointer;
+    /* background-color: rgba(118, 225, 242, 0.7); */
+    border-radius: 8px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+    /* font-family: montserrat; */
+}
+
+.nav-btn:hover {
+    transform: translateY(-10%); /* Moves up */
+    color: #2294b3;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#pappous{
+    width: 250px;          /* or any size you prefer */
+    height: 250px;         /* make sure width = height for perfect circle */
+    object-fit: cover;     /* ensures the image fills the circle nicely */
+    border-radius: 50%;
+}
+
+#info{
+    color: #1a1a1a;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(248, 245, 242, 0.7);
+    justify-content: space-evenly;
+    align-items: center ;
+    width: 500px;
+    height: 500px;
+    font-size: 1.4rem;
+    font-family: montserrat;
+    font-weight: 1000;
+    
+}
+
+#p1-info{
+    text-align: center;
+}
+
+#menu-div{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgba(248, 245, 242, 0.8);
+    width: 1000px;
+    height: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#menu-image{
+    width: 900px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#menu-image:hover {
+    transform: translateY(-2%);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+#contact-div{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgba(248, 245, 242, 0.8);
+    width: 900px;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#map{
+    width: 800px;
+}
+
+#contact-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
